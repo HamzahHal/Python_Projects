@@ -7,18 +7,19 @@ usernamekey = {
 
 guess = ''
 tries_count = 0
-tries_limit = 1
+tries_limit = 3
 tries_out = False
 
-while guess in usernamekey['Rav']:
-    guess = input("Enter Guess: ")
-    if guess != usernamekey['Rav']:
+while guess != usernamekey['Rav'] and not(tries_out):
+    if tries_count < tries_limit:
+        guess = input("Enter Guess: ")
         tries_count += 1
-        if tries_count > tries_limit:
-            tries_out = True
-            print('Failed')
-    elif guess == usernamekey['Rav']:
-        print('Well Done')
-        break
+    else:
+        tries_out = True
+
+if tries_out:
+    print('Out of tries')
+else:
+    print("You Win")
 
 
