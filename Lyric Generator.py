@@ -9,7 +9,6 @@ Selected = False
 print(" 1: 'Baby by Bieber',")
 
 while Choice != Songs['Baby by Bieber'] and not(Selected):
-    # if Selected == False:
     Choice = input('Enter Song: ')
 
 if Choice == Songs['Baby by Bieber']:
