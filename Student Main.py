@@ -14,7 +14,7 @@ print(student2.name, 'is', student2.age, 'and is studying', student2.major)
 print(student4.name, student4.age, student4.is_studying)
 
 
-#Searching and replacing string characters withing a name
+# Searching and replacing string characters withing a name
 for i in range(3):
     for letters in student3.name:
         student3.name = student3.name.replace('a', 'S')
